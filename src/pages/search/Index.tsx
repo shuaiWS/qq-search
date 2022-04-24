@@ -55,6 +55,7 @@ const Index = () => {
         <div>QQ</div>
         <div className="n-w8" />
         <Input
+          placeholder="请输入QQ号码查询"
           maxLength={10}
           value={searchVal}
           onChange={handleChange}

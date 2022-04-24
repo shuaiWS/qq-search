@@ -8,7 +8,7 @@ const Index = ({ message }: any) => {
 
 Index.cerate = ({ message, className = "", type = "error" }: any) => {
   const wrapper = document.createElement("div");
-  wrapper.className = `c-toast-wrapper ${className}`;
+  wrapper.className = `c-toast-wrapper c-toast-${type} ${className}`;
   wrapper.onanimationend = () => {
     document.body.removeChild(wrapper);
   };
@@ -17,8 +17,8 @@ Index.cerate = ({ message, className = "", type = "error" }: any) => {
   root.render(<Index message={message} />);
 };
 
-Index.error = (message: string) => {
-  return Index.cerate({ message, type: "error" });
+Index.error = (message: string, { className = "" } = {}) => {
+  return Index.cerate({ message, type: "error", className });
 };
 
 export default Index;
