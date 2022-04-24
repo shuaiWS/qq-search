@@ -6,6 +6,7 @@ export interface IInputProps {
   placeholder?: string;
   onChange: (v: string) => void;
   onSearch?: (v: string) => void;
+  [key: string]: any;
 }
 
 export interface IAvatar {

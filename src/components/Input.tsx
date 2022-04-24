@@ -10,12 +10,13 @@ import { useDebounce } from "@/common/util";
 const Index = (props: IInputProps) => {
   const {
     className = "",
-    value,
+    value = "",
     type = "number",
     onChange,
     onSearch = () => {},
     maxLength = undefined,
     placeholder = "",
+    ...otherProps
   } = props;
 
   const _onSearch = useDebounce((v: string) => {
@@ -53,6 +54,7 @@ const Index = (props: IInputProps) => {
   return (
     <div className={`c-input ${className}`}>
       <input
+        {...otherProps}
         className="c-input-inner"
         value={value}
         type={type}
