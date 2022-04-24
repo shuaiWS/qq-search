@@ -47,4 +47,5 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 ## 项目说明
 项目用来进行QQ查询
-初始访问设置参数[q]为QQ号可快速查询
+
+初始访问设置参数 `q` 为QQ号可快速查询,如: http://localhost:3000/?q=123456
