@@ -1,0 +1,38 @@
+.n-flex-cc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.n-flex-sc {
+  display: flex;
+  align-items: center;
+}
+.n-flex-bc {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.n-flex0 {
+  flex-shrink: 0;
+}
+.n-flex1 {
+  flex-shrink: 1;
+}
+
+.n-text-over {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.n-mgt-16 {
+  margin-top: 16px;
+}
+.n-w100 {
+  width: 100%;
+}
+.n-h100 {
+  height: 100%;
+}
+.n-w8 {
+  width: 8px;
+}

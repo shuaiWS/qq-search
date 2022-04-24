@@ -1,0 +1,11 @@
+.c-input {
+  width: 100%;
+  .c-input-inner {
+    width: 100%;
+    height: 24px;
+    line-height: 24px;
+    border: none;
+    border-bottom: 1px solid var(--border-color-1);
+    outline: none;
+  }
+}
